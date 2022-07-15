@@ -9,7 +9,7 @@ public class Main {
 
 
         SqrRootService service = new SqrRootService();
-        System.out.println(service.calcSqrt(dia1,dia2));
+        System.out.println(service.calcSqrt(dia1, dia2));
 
     }
 }

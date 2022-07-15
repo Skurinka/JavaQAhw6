@@ -8,14 +8,14 @@ import ru.netology.sqr.SqrRootService;
 public class SqrRootServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files="src/test/resources/sqrtservice.csv")
+    @CsvFileSource(files = "src/test/resources/sqrtservice.csv")
     public void testDiapason(int expected, int dia1, int dia2) {
         SqrRootService service = new SqrRootService();
 
 
-        int actual = service.calcSqrt(dia1,dia2);
+        int actual = service.calcSqrt(dia1, dia2);
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
 
     }
 }
